@@ -40,6 +40,7 @@ jobs:
 
           netsh advfirewall firewall add rule name="RDP-Tailscale" dir=in action=allow protocol=TCP localport=3389
 
+          Restart-Service -Name TermService -Force
 
 
       - name: Create RDP User with Secure Password
