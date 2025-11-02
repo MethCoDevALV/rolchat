@@ -38,9 +38,7 @@ jobs:
 
           # For testing, allow any incoming connection on port 3389
 
-          netsh advfirewall firewall add rule name="RDP-Tailscale" `
-
-            dir=in action=allow protocol=TCP localport=3389
+          netsh advfirewall firewall add rule name="RDP-Tailscale" dir=in action=allow protocol=TCP localport=3389
 
 
 
